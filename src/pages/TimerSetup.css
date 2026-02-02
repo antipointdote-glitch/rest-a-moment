@@ -1,0 +1,88 @@
+/* ========== Timer Setup 页面 ========== */
+.timer-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: "Noto Serif SC", "Noto Serif", serif;
+    position: relative;
+    padding: 32px;
+}
+
+/* ========== 内容区域 ========== */
+.timer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========== 时间输入区域 ========== */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #0d1b10;
+}
+
+/* 中文输入包装器 */
+.chinese-input-wrapper {
+    position: relative;
+    min-width: 60px;
+    text-align: center;
+}
+
+.chinese-display {
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+}
+
+.chinese-display.placeholder {
+    opacity: 0.3;
+}
+
+.time-input-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: text;
+    font-size: 28px;
+    z-index: 10;
+    border: none;
+    background: transparent;
+}
+
+/* ========== 开始按钮 ========== */
+.start-button {
+    margin-top: 80px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: #0d1b10;
+    letter-spacing: 0.8em;
+    padding-left: 0.8em;
+    transition: opacity 0.5s;
+}
+
+.start-button:hover {
+    opacity: 0.4;
+}

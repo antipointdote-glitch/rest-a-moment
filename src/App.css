@@ -1,0 +1,163 @@
+/* ========== iPhone 容器 ========== */
+.phone-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* ========== 主容器 (iPhone 15 Pro 尺寸) ========== */
+.app-container {
+  width: 393px;
+  height: 852px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Noto Serif SC", "Noto Serif", serif;
+  position: relative;
+  overflow: hidden;
+  border-radius: 48px;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== 页面包装器 ========== */
+.page-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 48px;
+}
+
+/* ========== 顶部状态栏 ========== */
+.status-bar {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  opacity: 0.4;
+}
+
+.status-time {
+  font-size: 12px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.status-icons {
+  display: flex;
+  gap: 6px;
+}
+
+.status-icons .material-symbols-outlined {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ========== 主内容区 ========== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 24px;
+}
+
+.character-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.character {
+  font-size: 84px;
+  font-weight: 700;
+  color: #0d1b10;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.character.clickable {
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  color: #4c9a59;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ========== 底部区域 ========== */
+.footer {
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.expand-button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(19, 236, 55, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expand-button .material-symbols-outlined {
+  color: #13ec37;
+  font-size: 24px;
+}
+
+.decorative-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(19, 236, 55, 0.3), transparent);
+}
+
+/* ========== 边框装饰 ========== */
+.edge-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: 8px solid #ffffff;
+  border-radius: 48px;
+  z-index: 50;
+}
+
+/* ========== Material Symbols ========== */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-family: 'Material Symbols Outlined' !important;
+}

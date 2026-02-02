@@ -1,0 +1,43 @@
+/* ========== 再见页面 ========== */
+.goodbye-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: "Noto Serif SC", "Noto Serif", serif;
+}
+
+.goodbye-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.goodbye-text {
+    font-size: 64px;
+    font-weight: 700;
+    color: #0d1b10;
+    letter-spacing: 0.3em;
+    padding-left: 0.3em;
+}
+
+.back-home-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: #0d1b10;
+    letter-spacing: 0.5em;
+    padding-left: 0.5em;
+    transition: opacity 0.5s;
+}
+
+.back-home-button:hover {
+    opacity: 0.4;
+}
